@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,15 @@
   "bugs": {
     "url": "https://github.com/capslocktao/vue-vue-router-vuex-ssr/issues"
   },
-  "homepage": "https://github.com/capslocktao/vue-vue-router-vuex-ssr#readme"
+  "homepage": "https://github.com/capslocktao/vue-vue-router-vuex-ssr#readme",
+  "dependencies": {
+    "css-loader": "^0.28.11",
+    "vue": "^2.5.16",
+    "vue-loader": "^13.6.0",
+    "vue-template-compiler": "^2.5.16",
+    "webpack": "^3.10.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^2.1.3"
+  }
 }
