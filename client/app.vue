@@ -1,16 +1,16 @@
 <template>
     <div id="app">
         <div class="cover"></div>
-        <Header></Header>
+        <TodoHeader></TodoHeader>
         <Todo></Todo>
         <Footer></Footer>
     </div>
 </template>
 
 <script>
-    import Header from './todo/header.vue';
-    import Footer from './todo/footer.jsx';
-    import Todo from './todo/todo.vue'
+    import TodoHeader from './layout/header.vue';
+    import Footer from './layout/footer.jsx';
+    import Todo from './views/todo/todo.vue'
     export default {
         name: "app",
         data(){
@@ -19,7 +19,7 @@
             }
         },
         components:{
-            Header,
+            TodoHeader,
             Footer,
             Todo
         }
