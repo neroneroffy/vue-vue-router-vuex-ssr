@@ -1,5 +1,5 @@
 <template>
-    <header class="main-header">
+    <header :class="$style.mainHeader">
         <h1>CAPSLOCK</h1>
     </header>
 </template>
@@ -10,7 +10,7 @@
     }
 </script>
 
-<style scoped lang="stylus">
+<style scoped lang="stylus" module>
     .main-header{
         text-align center
         h1{

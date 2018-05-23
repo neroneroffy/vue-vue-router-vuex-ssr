@@ -36,6 +36,17 @@ if(isDev){
                     use:[
                         'vue-style-loader',
                         'css-loader',
+/*
+                    从外部引入的styl遵循cssModule规则
+                        {
+                            loader:'css-loader',
+                            options:{
+                                module:true,
+                                localIdentName:isDev? '[path]-[name]-[hash:base64:5]':'[hash:base64:5]',
+                                camelCase:true//将用横杠链接的类名转换为驼峰命名
+                            }
+                        },
+*/
                         {
                             loader:'postcss-loader',
                             options:{
