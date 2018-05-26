@@ -54,7 +54,7 @@ export default {
           this.filter = state
         },
         clearAllCompleted () {
-          this.todos = this.todos.filter(todo => !todo.completed )
+          this.todos = this.todos.filter(todo => !todo.completed)
         }
       },
       computed: {
