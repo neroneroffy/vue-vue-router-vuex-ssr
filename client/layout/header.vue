@@ -1,5 +1,5 @@
 <template>
-    <header :class="$style.mainHeader">
+    <header class="main-header">
         <h1>CAPSLOCK</h1>
     </header>
 </template>
