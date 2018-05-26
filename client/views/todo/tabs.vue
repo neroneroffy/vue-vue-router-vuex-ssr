@@ -17,35 +17,35 @@
 
 <script>
     export default {
-        name: "tabs",
-        data(){
-            return {
-                states:['all','active','completed']
-            }
-        },
-        props:{
-            filter:{
-                type:String,
-                required:true
-            },
-            todos:{
-                type:Array,
-                required:true
-            }
-        },
-        methods:{
-            toggleFilter(state){
-                this.$emit('toggle',state)
-            },
-            clearCompleted(){
-                this.$emit('clearAll')
-            }
-        },
-        computed:{
-            unFinishedTodoLength(){
-                return this.todos.filter(todo => !todo.completed).length
-            },
+      name: 'tabs',
+      data () {
+        return {
+          states: ['all', 'active', 'completed']
         }
+      },
+      props: {
+        filter: {
+          type: String,
+          required: true
+        },
+        todos: {
+          type: Array,
+          required: true
+        }
+      },
+      methods: {
+        toggleFilter (state) {
+          this.$emit('toggle', state)
+        },
+        clearCompleted () {
+          this.$emit('clearAll')
+        }
+      },
+      computed: {
+        unFinishedTodoLength () {
+          return this.todos.filter(todo => !todo.completed).length
+        }
+      }
     }
 </script>
 

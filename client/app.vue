@@ -8,21 +8,21 @@
 </template>
 
 <script>
-    import TodoHeader from './layout/header.vue';
-    import Footer from './layout/footer.jsx';
-    import Todo from './views/todo/todo.vue'
+    import TodoHeader from './layout/header.vue'
+import Footer from './layout/footer.jsx'
+import Todo from './views/todo/todo.vue'
     export default {
-        name: "app",
-        data(){
-            return {
-                text:''
-            }
-        },
-        components:{
-            TodoHeader,
-            Footer,
-            Todo
+      name: 'app',
+      data () {
+        return {
+          text: ''
         }
+      },
+      components: {
+        TodoHeader,
+        Footer,
+        Todo
+      }
     }
 </script>
 
